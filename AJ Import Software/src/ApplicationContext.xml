@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+						
+	<!-- For Context Configuration Annotations -->
+	<context:annotation-config />
+	
+	<!-- For Database  -->					
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost/aj_import_database" />
+		<property name="username" value="root" />
+		<property name="password" value="ushan" />
+	</bean>
+
+
+	<bean id="hibernateProperties"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="properties">
+			<props>
+
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
+				</prop>
+
+				<prop key="hibernate.cache.use_second_level_cache">false</prop>
+				<prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider
+				</prop>
+				<prop key="hibernate.cache.use_query_cache">true</prop>
+				<prop key="hibernate.max_fetch_depth">3</prop>
+				<prop key="hibernate.connection.release_mode">after_transaction</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.use_sql_comments">true</prop>
+				<prop key="hibernate.generate_statistics">true</prop>
+				<prop key="hibernate.jdbc.batch_size">0</prop>
+				<prop key="hibernate.jdbc.use_streams_for_binary">true</prop>
+				<prop key="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory
+				</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="hibernateProperties" ref="hibernateProperties" />
+		<property name="annotatedClasses">
+			<list>
+				<value>com.ajimports.domain.Product</value>
+				<value>com.ajimports.domain.User</value>
+				<value>com.ajimports.domain.ExpenseDetails</value>
+			</list>
+		</property>
+		<property name="annotatedPackages">
+			<list>
+				<value>com.ajimports.domain</value>
+			</list>
+		</property>
+	</bean>
+
+			
+	<!-- DAO Beans -->
+			
+	<bean id="productDAO" class="com.ajimports.dao.ProductDAO">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="userDAO" class="com.ajimports.dao.UserDAO">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="expenseDetailsDAO" class="com.ajimports.dao.ExpenseDetailsDAO">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>		
+			
+	<!-- Action Beans -->
+			
+	<bean id="productAction" class="com.ajimports.action.ProductAction" />
+	
+	<bean id="userAction" class="com.ajimports.action.UserAction" />
+	
+	<bean id="expenseDetailsAction" class="com.ajimports.action.ExpenseDetailsAction" />
+		
+	
+	<!-- View Beans -->
+			
+	<bean id="productView" class="com.ajimports.view.ProductView" />
+	
+	<bean id="homeWindowView" class="com.ajimports.view.HomeWindow" />
+		
+	<bean id="loginFormView" class="com.ajimports.view.LoginFormView" />
+	
+	<bean id="userRegisterView" class="com.ajimports.view.UserRegisterView" />
+	
+	<bean id="expenseDetails" class="com.ajimports.view.ExpenseDetailsView" />
+	
+	<bean id="reportDetailsView" class="com.ajimports.view.ReportDetailsView" />
+	
+	<bean id="reportView" class="com.ajimports.view.ReportView" />
+	
+	<bean id="expendedByReportView" class="com.ajimports.view.ExpendedByReportView" />
+	
+	
+	
+	<!-- Beans for Emails -->
+	
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+	<property name="host" value="smtp.gmail.com" />
+	<property name="port" value="25" />
+	<property name="username" value="tamilnaducollegeofeng@gmail.com" />
+	<property name="password" value="ajimport" />
+
+	<property name="javaMailProperties">
+		<props>
+           	<prop key="mail.smtp.auth">true</prop>
+           	<prop key="mail.smtp.starttls.enable">true</prop>
+       	</props>
+	</property>
+    </bean>
+
+    <bean id="sendMailBean" class="com.ajimports.reports.SendMail">
+            <property name="mailSender" ref="mailSender" />
+            <property name="simpleMailMessage" ref="customeMailMessage" />
+    </bean>
+
+    <bean id="customeMailMessage" class="org.springframework.mail.SimpleMailMessage">
+			<property name="from" value="tamilnaducollegeofeng@gmail.com" />
+            <property name="to" value="ariyaushan@gmail.com" />
+            <property name="subject" value="Aj Imports Report" />
+            <property name="text">
+            <value>
+                    <![CDATA[
+                            Report Date %s,
+                            Mail Content : %s
+                    ]]>
+            </value>
+        </property>
+    </bean>
+</beans>

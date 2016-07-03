@@ -1,0 +1,822 @@
+[Nov 30 10:31:32] [INFO ] (AbstractApplicationContext.java:456) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1bc887b: startup date [Fri Nov 30 10:31:32 IST 2012]; root of context hierarchy
+[Nov 30 10:31:36] [INFO ] (XmlBeanDefinitionReader.java:315) - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+[Nov 30 10:31:36] [DEBUG] (DefaultDocumentLoader.java:72) - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+[Nov 30 10:31:36] [DEBUG] (PluggableSchemaResolver.java:140) - Loading schema mappings from [META-INF/spring.schemas]
+[Nov 30 10:31:36] [DEBUG] (PluggableSchemaResolver.java:146) - Loaded schema mappings: {http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/jms/spring-jms-3.0.xsd=org/springframework/jms/config/spring-jms-3.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jms/spring-jms-2.5.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms.xsd=org/springframework/jms/config/spring-jms-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+[Nov 30 10:31:36] [DEBUG] (PluggableSchemaResolver.java:118) - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+[Nov 30 10:31:36] [DEBUG] (DefaultBeanDefinitionDocumentReader.java:87) - Loading bean definitions
+[Nov 30 10:31:36] [DEBUG] (AbstractBeanDefinitionReader.java:185) - Loaded 20 bean definitions from location pattern [ApplicationContext.xml]
+[Nov 30 10:31:36] [DEBUG] (AbstractApplicationContext.java:470) - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@1bc887b: org.springframework.beans.factory.support.DefaultListableBeanFactory@1326484: defining beans [dataSource,hibernateProperties,sessionFactory,productDAO,userDAO,expenseDetailsDAO,productAction,userAction,expenseDetailsAction,productView,homeWindowView,loginFormView,userRegisterView,expenseDetails,reportDetailsView,reportView,expendedByReportView,mailSender,sendMailBean,customeMailMessage]; root of factory hierarchy
+[Nov 30 10:31:37] [DEBUG] (AbstractApplicationContext.java:776) - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@111b910]
+[Nov 30 10:31:37] [DEBUG] (AbstractApplicationContext.java:800) - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@1d5a0]
+[Nov 30 10:31:37] [INFO ] (DefaultListableBeanFactory.java:549) - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1326484: defining beans [dataSource,hibernateProperties,sessionFactory,productDAO,userDAO,expenseDetailsDAO,productAction,userAction,expenseDetailsAction,productView,homeWindowView,loginFormView,userRegisterView,expenseDetails,reportDetailsView,reportView,expendedByReportView,mailSender,sendMailBean,customeMailMessage]; root of factory hierarchy
+[Nov 30 10:31:37] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'dataSource'
+[Nov 30 10:31:37] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'dataSource'
+[Nov 30 10:31:37] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+[Nov 30 10:31:37] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'dataSource'
+[Nov 30 10:31:37] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'hibernateProperties'
+[Nov 30 10:31:37] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'hibernateProperties'
+[Nov 30 10:31:37] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'hibernateProperties' to allow for resolving potential circular references
+[Nov 30 10:31:37] [DEBUG] (AbstractAutowireCapableBeanFactory.java:1453) - Invoking afterPropertiesSet() on bean with name 'hibernateProperties'
+[Nov 30 10:31:37] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'hibernateProperties'
+[Nov 30 10:31:37] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'sessionFactory'
+[Nov 30 10:31:37] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'sessionFactory'
+[Nov 30 10:31:37] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'sessionFactory' to allow for resolving potential circular references
+[Nov 30 10:31:37] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'dataSource'
+[Nov 30 10:31:37] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'hibernateProperties'
+[Nov 30 10:31:37] [DEBUG] (AbstractAutowireCapableBeanFactory.java:1453) - Invoking afterPropertiesSet() on bean with name 'sessionFactory'
+[Nov 30 10:31:37] [INFO ] (JCLLoggerAdapter.java:284) - Hibernate Annotations 3.5.3-Final
+[Nov 30 10:31:37] [INFO ] (JCLLoggerAdapter.java:263) - Hibernate 3.5.3-Final
+[Nov 30 10:31:37] [INFO ] (JCLLoggerAdapter.java:263) - hibernate.properties not found
+[Nov 30 10:31:37] [INFO ] (JCLLoggerAdapter.java:263) - Bytecode provider name : javassist
+[Nov 30 10:31:37] [INFO ] (JCLLoggerAdapter.java:263) - using JDK 1.4 java.sql.Timestamp handling
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [uuid] -> [class org.hibernate.id.UUIDHexGenerator]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [hilo] -> [class org.hibernate.id.TableHiLoGenerator]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [assigned] -> [class org.hibernate.id.Assigned]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [identity] -> [class org.hibernate.id.IdentityGenerator]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [select] -> [class org.hibernate.id.SelectGenerator]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [sequence] -> [class org.hibernate.id.SequenceGenerator]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [seqhilo] -> [class org.hibernate.id.SequenceHiLoGenerator]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [increment] -> [class org.hibernate.id.IncrementGenerator]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [foreign] -> [class org.hibernate.id.ForeignGenerator]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [guid] -> [class org.hibernate.id.GUIDGenerator]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [uuid.hex] -> [class org.hibernate.id.UUIDHexGenerator]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [sequence-identity] -> [class org.hibernate.id.SequenceIdentityGenerator]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [enhanced-sequence] -> [class org.hibernate.id.enhanced.SequenceStyleGenerator]
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [enhanced-table] -> [class org.hibernate.id.enhanced.TableGenerator]
+[Nov 30 10:31:37] [INFO ] (JCLLoggerAdapter.java:284) - Hibernate Commons Annotations 3.2.0.Final
+[Nov 30 10:31:37] [INFO ] (JCLLoggerAdapter.java:284) - Mapping package com.ajimports.domain
+[Nov 30 10:31:37] [WARN ] (JCLLoggerAdapter.java:379) - Package not found or wo package-info.java: com.ajimports.domain
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Execute first pass mapping processing
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Process hbm files
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Process annotated classes
+[Nov 30 10:31:37] [INFO ] (JCLLoggerAdapter.java:284) - Binding entity from annotated class: com.ajimports.domain.Product
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[Nov 30 10:31:37] [DEBUG] (JCLLoggerAdapter.java:168) - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - Import with entity name selling_product_details
+[Nov 30 10:31:38] [INFO ] (JCLLoggerAdapter.java:307) - Bind entity com.ajimports.domain.Product on table selling_product_details
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(selling_product_details), mappingColumn=ITEM_NO, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property productId with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for productId
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property productId
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(selling_product_details), mappingColumn=DATE, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property date with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for date
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property date
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(selling_product_details), mappingColumn=DESCRIPTION, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property productName with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for productName
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property productName
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(selling_product_details), mappingColumn=PRICE, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property productPrice with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for productPrice
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property productPrice
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(selling_product_details), mappingColumn=QUANTITY, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property productQuantity with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for productQuantity
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property productQuantity
+[Nov 30 10:31:38] [INFO ] (JCLLoggerAdapter.java:284) - Binding entity from annotated class: com.ajimports.domain.User
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - Import with entity name user_info
+[Nov 30 10:31:38] [INFO ] (JCLLoggerAdapter.java:307) - Bind entity com.ajimports.domain.User on table user_info
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_info), mappingColumn=USERID, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property userId with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for userId
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property userId
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_info), mappingColumn=IMAGE, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property image with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for image
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property image
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_info), mappingColumn=PASSWORD, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property passWord with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for passWord
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property passWord
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_info), mappingColumn=USERNAME, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property userName with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for userName
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property userName
+[Nov 30 10:31:38] [INFO ] (JCLLoggerAdapter.java:284) - Binding entity from annotated class: com.ajimports.domain.ExpenseDetails
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - Import with entity name expense_details
+[Nov 30 10:31:38] [INFO ] (JCLLoggerAdapter.java:307) - Bind entity com.ajimports.domain.ExpenseDetails on table expense_details
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense_details), mappingColumn=EXPENSE_ID, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property expenseId with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for expenseId
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property expenseId
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense_details), mappingColumn=PRICE_CAUSED, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property causedPrice with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for causedPrice
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property causedPrice
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense_details), mappingColumn=EXPENDED_DATE, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property expendedDate with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for expendedDate
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property expendedDate
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense_details), mappingColumn=DESCRIPTION, insertable=true, updatable=true, unique=false}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:211) - binding property expendedFor with lazy=false
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for expendedFor
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Building property expendedFor
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for productId
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for date
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for productName
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for productPrice
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for productQuantity
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for userId
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for image
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for passWord
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for userName
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for expenseId
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for causedPrice
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for expendedDate
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for expendedFor
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - processing fk mappings (*ToOne and JoinedSubclass)
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - processing extends queue
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - processing collection mappings
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - processing native query and ResultSetMapping mappings
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - processing association property references
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - processing foreign key constraints
+[Nov 30 10:31:38] [INFO ] (JCLLoggerAdapter.java:263) - Hibernate Validator not found: ignoring
+[Nov 30 10:31:38] [INFO ] (LocalSessionFactoryBean.java:772) - Building new Hibernate SessionFactory
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Legacy Validator not present in classpath, ignoring event listener registration
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Search not present in classpath, ignoring event listener registration.
+[Nov 30 10:31:38] [INFO ] (JCLLoggerAdapter.java:284) - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Preparing to build session factory with filters : {}
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Execute first pass mapping processing
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Process hbm files
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - Process annotated classes
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - processing fk mappings (*ToOne and JoinedSubclass)
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - processing extends queue
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - processing collection mappings
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - processing native query and ResultSetMapping mappings
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - processing association property references
+[Nov 30 10:31:38] [DEBUG] (JCLLoggerAdapter.java:168) - processing foreign key constraints
+[Nov 30 10:31:38] [INFO ] (JCLLoggerAdapter.java:263) - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[Nov 30 10:31:38] [INFO ] (JCLLoggerAdapter.java:263) - RDBMS: MySQL, version: 5.0.67-community-nt
+[Nov 30 10:31:38] [INFO ] (JCLLoggerAdapter.java:263) - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.5 ( Revision: ${svn.Revision} )
+[Nov 30 10:31:38] [INFO ] (JCLLoggerAdapter.java:263) - Using dialect: org.hibernate.dialect.MySQLDialect
+[Nov 30 10:31:38] [INFO ] (JCLLoggerAdapter.java:263) - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Automatic flush during beforeCompletion(): disabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Automatic session close at end of transaction: disabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Scrollable result sets: enabled
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Wrap result sets: disabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - JDBC3 getGeneratedKeys(): enabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Connection release mode: after_transaction
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Maximum outer join fetch depth: 3
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Default batch fetch size: 1
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Generate SQL with comments: enabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Order SQL updates by primary key: disabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Order SQL inserts for batching: disabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Using ASTQueryTranslatorFactory
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Query language substitutions: {}
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - JPA-QL strict compliance: disabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Second-level cache: disabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Query cache: enabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Cache provider: org.hibernate.cache.EhCacheProvider
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Optimize cache for minimal puts: disabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Structured second-level cache entries: disabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Echoing all SQL to stdout
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Statistics: enabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Deleted entity synthetic identifier rollback: disabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Default entity-mode: pojo
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Named query checking : enabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - building session factory
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Session factory constructed with filter configurations : {}
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider, sun.boot.library.path=C:\Program Files\Java\jdk1.6.0_25\jre\bin, java.vm.version=20.0-b11, java.vm.vendor=Sun Microsystems Inc., java.vendor.url=http://java.sun.com/, path.separator=;, hibernate.cache.use_query_cache=true, java.vm.name=Java HotSpot(TM) Client VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=D:\Ushan\Software Programs\Desktop Applications\AJ Import Software, java.runtime.version=1.6.0_25-b06, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, hibernate.current_session_context_class=org.springframework.orm.hibernate3.SpringSessionContext, java.endorsed.dirs=C:\Program Files\Java\jdk1.6.0_25\jre\lib\endorsed, os.arch=x86, java.io.tmpdir=C:\Users\user\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Sun Microsystems Inc., user.variant=, os.name=Windows 7, hibernate.cache.use_second_level_cache=false, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.6.0_25\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.6.0_25/bin/../jre/bin/client;C:/Program Files/Java/jdk1.6.0_25/bin/../jre/bin;C:/Program Files/Java/jdk1.6.0_25/bin/../jre/lib/i386;47;C:\Program Files\Common Files\Reallusion\CamSuite;C:\Program Files\Common Files\Reallusion\CamSuite;C:\Program Files\Java\jdk1.6.0_25\bin;D:\Ushan\apache-tomcat-6.0.35\bin;C:\Program Files\Android\android-sdk;;G:\Programming Softwares\springsource\sts-2.6.1.SR1;, hibernate.generate_statistics=true, java.specification.name=Java Platform API Specification, java.class.version=50.0, sun.management.compiler=HotSpot Client Compiler, hibernate.transaction.factory_class=org.hibernate.transaction.JDBCTransactionFactory, os.version=6.1, user.home=C:\Users\user, user.timezone=Asia/Calcutta, java.awt.printerjob=sun.awt.windows.WPrinterJob, hibernate.connection.release_mode=after_transaction, java.specification.version=1.6, file.encoding=Cp1252, hibernate.format_sql=true, java.class.path=D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\bin;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\antlr-2.7.6.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\aopalliance.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\asm-all-3.3.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\backport-util-concurrent.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\cglib-2.2.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\comm.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-beanutils.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-collections-3.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-dbcp-1.4.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-digester-1.8.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-io-2.0.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-logging-1.1.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-pool-1.5.6.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\dom4j-1.6.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\ehcache-1.5.0.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\groovy-1.0.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\h2-1.3.158.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\hibernate-jpa-2.0-api-1.0.0.Final.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\hibernate3.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\itext-2.0.5.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\jasperreports-2.0.5.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\javassist-3.9.0.GA.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\jgoodies-common-1.2.0.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\jgoodies-looks-2.4.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\jnotify-0.93.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\jta-1.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\JTattoo.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\log4j-1.2.16.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\mysql-connector-java-5.1.5-bin.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.aop-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.asm-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.aspects-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.beans-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.context-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.context.support-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.core-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.expression-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.instrument-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.instrument.tomcat-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.jdbc-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.jms-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.orm-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.oxm-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.test-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.transaction-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.web-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.web.portlet-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.web.servlet-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.web.struts-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\pduutils.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\rt.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\smslib-3.5.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\smsserver-3.5.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\WinRun4J.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\forms.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\slf4j-api-1.6.4.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\slf4j-jcl-1.6.4.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\mail.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\jcalendar.jar, user.name=user, hibernate.bytecode.use_reflection_optimizer=false, hibernate.use_sql_comments=true, hibernate.show_sql=true, java.vm.specification.version=1.0, sun.arch.data.model=32, java.home=C:\Program Files\Java\jdk1.6.0_25\jre, sun.java.command=com.ajimports.main.AjimportMain, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.specification.vendor=Sun Microsystems Inc., user.language=en, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.6.0_25, hibernate.jdbc.use_streams_for_binary=true, java.ext.dirs=C:\Program Files\Java\jdk1.6.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.6.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\modules\jdk.boot.jar;C:\Program Files\Java\jdk1.6.0_25\jre\classes, java.vendor=Sun Microsystems Inc., hibernate.jdbc.batch_size=0, file.separator=\, java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi, hibernate.hbm2ddl.auto=update, hibernate.connection.provider_class=org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=windows, hibernate.max_fetch_depth=3, sun.cpu.isalist=pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86}
+[Nov 30 10:31:39] [DEBUG] (CacheManager.java:270) - Configuring ehcache from classpath.
+[Nov 30 10:31:39] [WARN ] (ConfigurationFactory.java:133) - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Ushan/Software%20Programs/Desktop%20Applications/AJ%20Import%20Software/lib/client_lib/ehcache-1.5.0.jar!/ehcache-failsafe.xml
+[Nov 30 10:31:39] [DEBUG] (ConfigurationFactory.java:93) - Configuring ehcache from URL: jar:file:/D:/Ushan/Software%20Programs/Desktop%20Applications/AJ%20Import%20Software/lib/client_lib/ehcache-1.5.0.jar!/ehcache-failsafe.xml
+[Nov 30 10:31:39] [DEBUG] (ConfigurationFactory.java:145) - Configuring ehcache from InputStream
+[Nov 30 10:31:39] [DEBUG] (BeanHandler.java:213) - Ignoring ehcache attribute xmlns:xsi
+[Nov 30 10:31:39] [DEBUG] (BeanHandler.java:213) - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+[Nov 30 10:31:39] [DEBUG] (DiskStoreConfiguration.java:98) - Disk Store Path: C:\Users\user\AppData\Local\Temp\
+[Nov 30 10:31:39] [DEBUG] (ConfigurationHelper.java:300) - No CacheManagerEventListenerFactory class specified. Skipping...
+[Nov 30 10:31:39] [DEBUG] (ConfigurationHelper.java:276) - No CachePeerListenerFactoryConfiguration specified. Not configuring a CacheManagerPeerListener.
+[Nov 30 10:31:39] [DEBUG] (ConfigurationHelper.java:253) - No CachePeerProviderFactoryConfiguration specified. Not configuring a CacheManagerPeerProvider.
+[Nov 30 10:31:39] [DEBUG] (ConfigurationHelper.java:180) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[Nov 30 10:31:39] [DEBUG] (ConfigurationHelper.java:205) - No CacheLoaderFactory class specified. Skipping...
+[Nov 30 10:31:39] [DEBUG] (ConfigurationHelper.java:230) - No CacheExceptionHandlerFactory class specified. Skipping...
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Setting dialect [org.hibernate.dialect.MySQLDialect]
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Setting dialect [org.hibernate.dialect.MySQLDialect]
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Setting dialect [org.hibernate.dialect.MySQLDialect]
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static SQL for entity: com.ajimports.domain.ExpenseDetails
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Version select: /* get version com.ajimports.domain.ExpenseDetails */ select EXPENSE_ID from expense_details where EXPENSE_ID =?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Snapshot select: /* get current state com.ajimports.domain.ExpenseDetails */ select expensedet_.EXPENSE_ID, expensedet_.PRICE_CAUSED as PRICE2_2_, expensedet_.EXPENDED_DATE as EXPENDED3_2_, expensedet_.DESCRIPTION as DESCRIPT4_2_ from expense_details expensedet_ where expensedet_.EXPENSE_ID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Insert 0: /* insert com.ajimports.domain.ExpenseDetails */ insert into expense_details (PRICE_CAUSED, EXPENDED_DATE, DESCRIPTION, EXPENSE_ID) values (?, ?, ?, ?)
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Update 0: /* update com.ajimports.domain.ExpenseDetails */ update expense_details set PRICE_CAUSED=?, EXPENDED_DATE=?, DESCRIPTION=? where EXPENSE_ID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Delete 0: /* delete com.ajimports.domain.ExpenseDetails */ delete from expense_details where EXPENSE_ID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Identity insert: /* insert com.ajimports.domain.ExpenseDetails */ insert into expense_details (PRICE_CAUSED, EXPENDED_DATE, DESCRIPTION) values (?, ?, ?)
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static SQL for entity: com.ajimports.domain.Product
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Version select: /* get version com.ajimports.domain.Product */ select ITEM_NO from selling_product_details where ITEM_NO =?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Snapshot select: /* get current state com.ajimports.domain.Product */ select product_.ITEM_NO, product_.DATE as DATE0_, product_.DESCRIPTION as DESCRIPT3_0_, product_.PRICE as PRICE0_, product_.QUANTITY as QUANTITY0_ from selling_product_details product_ where product_.ITEM_NO=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Insert 0: /* insert com.ajimports.domain.Product */ insert into selling_product_details (DATE, DESCRIPTION, PRICE, QUANTITY, ITEM_NO) values (?, ?, ?, ?, ?)
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Update 0: /* update com.ajimports.domain.Product */ update selling_product_details set DATE=?, DESCRIPTION=?, PRICE=?, QUANTITY=? where ITEM_NO=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Delete 0: /* delete com.ajimports.domain.Product */ delete from selling_product_details where ITEM_NO=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Identity insert: /* insert com.ajimports.domain.Product */ insert into selling_product_details (DATE, DESCRIPTION, PRICE, QUANTITY) values (?, ?, ?, ?)
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static SQL for entity: com.ajimports.domain.User
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Version select: /* get version com.ajimports.domain.User */ select USERID from user_info where USERID =?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Snapshot select: /* get current state com.ajimports.domain.User */ select user_.USERID, user_.IMAGE as IMAGE1_, user_.PASSWORD as PASSWORD1_, user_.USERNAME as USERNAME1_ from user_info user_ where user_.USERID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Insert 0: /* insert com.ajimports.domain.User */ insert into user_info (IMAGE, PASSWORD, USERNAME, USERID) values (?, ?, ?, ?)
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Update 0: /* update com.ajimports.domain.User */ update user_info set IMAGE=?, PASSWORD=?, USERNAME=? where USERID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Delete 0: /* delete com.ajimports.domain.User */ delete from user_info where USERID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) -  Identity insert: /* insert com.ajimports.domain.User */ insert into user_info (IMAGE, PASSWORD, USERNAME) values (?, ?, ?)
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [NONE]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [READ]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [UPGRADE]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [UPGRADE_NOWAIT]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [FORCE]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [PESSIMISTIC_READ]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=? lock in share mode
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [PESSIMISTIC_WRITE]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [PESSIMISTIC_FORCE_INCREMENT]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [OPTIMISTIC]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [OPTIMISTIC_FORCE_INCREMENT]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for action ACTION_MERGE on entity com.ajimports.domain.ExpenseDetails: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for action ACTION_REFRESH on entity com.ajimports.domain.ExpenseDetails: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [NONE]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [READ]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [UPGRADE]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [UPGRADE_NOWAIT]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [FORCE]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [PESSIMISTIC_READ]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=? lock in share mode
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [PESSIMISTIC_WRITE]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [PESSIMISTIC_FORCE_INCREMENT]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [OPTIMISTIC]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [OPTIMISTIC_FORCE_INCREMENT]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for action ACTION_MERGE on entity com.ajimports.domain.Product: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for action ACTION_REFRESH on entity com.ajimports.domain.Product: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [NONE]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [READ]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [UPGRADE]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [UPGRADE_NOWAIT]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [FORCE]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [PESSIMISTIC_READ]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=? lock in share mode
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [PESSIMISTIC_WRITE]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [PESSIMISTIC_FORCE_INCREMENT]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=? for update
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [OPTIMISTIC]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [OPTIMISTIC_FORCE_INCREMENT]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for action ACTION_MERGE on entity com.ajimports.domain.User: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for action ACTION_REFRESH on entity com.ajimports.domain.User: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=?
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - initializing class SessionFactoryObjectFactory
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - registered: 402881823b4fb0fe013b4fb1068d0000 (unnamed)
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Not binding factory to JNDI, no JNDI name configured
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - instantiated session factory
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - Running hbm2ddl schema update
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - fetching database metadata
+[Nov 30 10:31:39] [INFO ] (JCLLoggerAdapter.java:263) - updating schema
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Execute first pass mapping processing
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Process hbm files
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - Process annotated classes
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - processing fk mappings (*ToOne and JoinedSubclass)
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - processing extends queue
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - processing collection mappings
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - processing native query and ResultSetMapping mappings
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - processing association property references
+[Nov 30 10:31:39] [DEBUG] (JCLLoggerAdapter.java:168) - processing foreign key constraints
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - table found: aj_import_database.expense_details
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - columns: [expense_id, description, price_caused, expended_date]
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - foreign keys: []
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - indexes: [primary]
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - table found: aj_import_database.selling_product_details
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - columns: [item_no, price, description, quantity, date]
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - foreign keys: []
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - indexes: [primary]
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - table found: aj_import_database.user_info
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - columns: [username, userid, image, password]
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - foreign keys: []
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - indexes: [primary]
+[Nov 30 10:31:40] [DEBUG] (JCLLoggerAdapter.java:168) - Setting dialect [org.hibernate.dialect.MySQLDialect]
+[Nov 30 10:31:40] [DEBUG] (JCLLoggerAdapter.java:168) - Setting dialect [org.hibernate.dialect.MySQLDialect]
+[Nov 30 10:31:40] [DEBUG] (JCLLoggerAdapter.java:168) - Setting dialect [org.hibernate.dialect.MySQLDialect]
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - schema update complete
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+[Nov 30 10:31:40] [WARN ] (JCLLoggerAdapter.java:359) - Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+[Nov 30 10:31:40] [DEBUG] (DiskStore.java:201) - Deleting data file org.hibernate.cache.UpdateTimestampsCache.data
+[Nov 30 10:31:40] [DEBUG] (MemoryStore.java:73) - Initialized net.sf.ehcache.store.LruMemoryStore for org.hibernate.cache.UpdateTimestampsCache
+[Nov 30 10:31:40] [DEBUG] (LruMemoryStore.java:71) - org.hibernate.cache.UpdateTimestampsCache Cache: Using SpoolingLinkedHashMap implementation
+[Nov 30 10:31:40] [DEBUG] (Cache.java:557) - Initialised cache: org.hibernate.cache.UpdateTimestampsCache
+[Nov 30 10:31:40] [DEBUG] (JCLLoggerAdapter.java:168) - started EHCache region: org.hibernate.cache.UpdateTimestampsCache
+[Nov 30 10:31:40] [INFO ] (JCLLoggerAdapter.java:263) - starting query cache at region: org.hibernate.cache.StandardQueryCache
+[Nov 30 10:31:40] [WARN ] (JCLLoggerAdapter.java:359) - Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+[Nov 30 10:31:40] [DEBUG] (DiskStore.java:201) - Deleting data file org.hibernate.cache.StandardQueryCache.data
+[Nov 30 10:31:40] [DEBUG] (MemoryStore.java:73) - Initialized net.sf.ehcache.store.LruMemoryStore for org.hibernate.cache.StandardQueryCache
+[Nov 30 10:31:40] [DEBUG] (LruMemoryStore.java:71) - org.hibernate.cache.StandardQueryCache Cache: Using SpoolingLinkedHashMap implementation
+[Nov 30 10:31:40] [DEBUG] (Cache.java:557) - Initialised cache: org.hibernate.cache.StandardQueryCache
+[Nov 30 10:31:40] [DEBUG] (JCLLoggerAdapter.java:168) - started EHCache region: org.hibernate.cache.StandardQueryCache
+[Nov 30 10:31:40] [DEBUG] (JCLLoggerAdapter.java:168) - Checking 0 named HQL queries
+[Nov 30 10:31:40] [DEBUG] (JCLLoggerAdapter.java:168) - Checking 0 named SQL queries
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'sessionFactory'
+[Nov 30 10:31:40] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'productDAO'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'productDAO'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'productDAO' to allow for resolving potential circular references
+[Nov 30 10:31:40] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'sessionFactory'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:1453) - Invoking afterPropertiesSet() on bean with name 'productDAO'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'productDAO'
+[Nov 30 10:31:40] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'userDAO'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'userDAO'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'userDAO' to allow for resolving potential circular references
+[Nov 30 10:31:40] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'sessionFactory'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:1453) - Invoking afterPropertiesSet() on bean with name 'userDAO'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'userDAO'
+[Nov 30 10:31:40] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'expenseDetailsDAO'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'expenseDetailsDAO'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'expenseDetailsDAO' to allow for resolving potential circular references
+[Nov 30 10:31:40] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'sessionFactory'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:1453) - Invoking afterPropertiesSet() on bean with name 'expenseDetailsDAO'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'expenseDetailsDAO'
+[Nov 30 10:31:40] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'productAction'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'productAction'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'productAction' to allow for resolving potential circular references
+[Nov 30 10:31:40] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'productDAO'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'productAction'
+[Nov 30 10:31:40] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'userAction'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'userAction'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'userAction' to allow for resolving potential circular references
+[Nov 30 10:31:40] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'userDAO'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'userAction'
+[Nov 30 10:31:40] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'expenseDetailsAction'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'expenseDetailsAction'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'expenseDetailsAction' to allow for resolving potential circular references
+[Nov 30 10:31:40] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'expenseDetailsDAO'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'expenseDetailsAction'
+[Nov 30 10:31:40] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'productView'
+[Nov 30 10:31:40] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'productView'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'productView' to allow for resolving potential circular references
+[Nov 30 10:31:42] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'productAction'
+[Nov 30 10:31:42] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'sendMailBean'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'sendMailBean'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'sendMailBean' to allow for resolving potential circular references
+[Nov 30 10:31:42] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'mailSender'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'mailSender'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'mailSender' to allow for resolving potential circular references
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'mailSender'
+[Nov 30 10:31:42] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'customeMailMessage'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'customeMailMessage'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'customeMailMessage' to allow for resolving potential circular references
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'customeMailMessage'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'sendMailBean'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'productView'
+[Nov 30 10:31:42] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'homeWindowView'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'homeWindowView'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'homeWindowView' to allow for resolving potential circular references
+[Nov 30 10:31:42] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'productView'
+[Nov 30 10:31:42] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'userRegisterView'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'userRegisterView'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'userRegisterView' to allow for resolving potential circular references
+[Nov 30 10:31:42] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'userAction'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'userRegisterView'
+[Nov 30 10:31:42] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'expenseDetails'
+[Nov 30 10:31:42] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'expenseDetails'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'expenseDetails' to allow for resolving potential circular references
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'expenseDetailsAction'
+[Nov 30 10:31:43] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'reportDetailsView'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'reportDetailsView'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'reportDetailsView' to allow for resolving potential circular references
+[Nov 30 10:31:43] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'reportView'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'reportView'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'reportView' to allow for resolving potential circular references
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'expenseDetailsAction'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'reportView'
+[Nov 30 10:31:43] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'expendedByReportView'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'expendedByReportView'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'expendedByReportView' to allow for resolving potential circular references
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'expenseDetailsAction'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'expendedByReportView'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'reportDetailsView'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'expenseDetails'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'homeWindowView'
+[Nov 30 10:31:43] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'loginFormView'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'loginFormView'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'loginFormView' to allow for resolving potential circular references
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'userAction'
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'homeWindowView'
+[Nov 30 10:31:43] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'loginFormView'
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'userRegisterView'
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'expenseDetails'
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'reportDetailsView'
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'reportView'
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'expendedByReportView'
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'mailSender'
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'sendMailBean'
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'customeMailMessage'
+[Nov 30 10:31:43] [DEBUG] (AbstractApplicationContext.java:827) - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@19811ce]
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'lifecycleProcessor'
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'dataSource'
+[Nov 30 10:31:43] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'loginFormView'
+[Nov 30 10:36:54] [INFO ] (AbstractApplicationContext.java:456) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1bc887b: startup date [Fri Nov 30 10:36:54 IST 2012]; root of context hierarchy
+[Nov 30 10:36:54] [INFO ] (XmlBeanDefinitionReader.java:315) - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+[Nov 30 10:36:54] [DEBUG] (DefaultDocumentLoader.java:72) - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+[Nov 30 10:36:54] [DEBUG] (PluggableSchemaResolver.java:140) - Loading schema mappings from [META-INF/spring.schemas]
+[Nov 30 10:36:54] [DEBUG] (PluggableSchemaResolver.java:146) - Loaded schema mappings: {http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/jms/spring-jms-3.0.xsd=org/springframework/jms/config/spring-jms-3.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jms/spring-jms-2.5.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms.xsd=org/springframework/jms/config/spring-jms-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+[Nov 30 10:36:54] [DEBUG] (PluggableSchemaResolver.java:118) - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+[Nov 30 10:36:54] [DEBUG] (DefaultBeanDefinitionDocumentReader.java:87) - Loading bean definitions
+[Nov 30 10:36:54] [DEBUG] (AbstractBeanDefinitionReader.java:185) - Loaded 20 bean definitions from location pattern [ApplicationContext.xml]
+[Nov 30 10:36:54] [DEBUG] (AbstractApplicationContext.java:470) - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@1bc887b: org.springframework.beans.factory.support.DefaultListableBeanFactory@331059: defining beans [dataSource,hibernateProperties,sessionFactory,productDAO,userDAO,expenseDetailsDAO,productAction,userAction,expenseDetailsAction,productView,homeWindowView,loginFormView,userRegisterView,expenseDetails,reportDetailsView,reportView,expendedByReportView,mailSender,sendMailBean,customeMailMessage]; root of factory hierarchy
+[Nov 30 10:36:54] [DEBUG] (AbstractApplicationContext.java:776) - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@baa466]
+[Nov 30 10:36:54] [DEBUG] (AbstractApplicationContext.java:800) - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@13c6a22]
+[Nov 30 10:36:54] [INFO ] (DefaultListableBeanFactory.java:549) - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@331059: defining beans [dataSource,hibernateProperties,sessionFactory,productDAO,userDAO,expenseDetailsDAO,productAction,userAction,expenseDetailsAction,productView,homeWindowView,loginFormView,userRegisterView,expenseDetails,reportDetailsView,reportView,expendedByReportView,mailSender,sendMailBean,customeMailMessage]; root of factory hierarchy
+[Nov 30 10:36:54] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'dataSource'
+[Nov 30 10:36:54] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'dataSource'
+[Nov 30 10:36:54] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+[Nov 30 10:36:54] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'dataSource'
+[Nov 30 10:36:54] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'hibernateProperties'
+[Nov 30 10:36:54] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'hibernateProperties'
+[Nov 30 10:36:54] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'hibernateProperties' to allow for resolving potential circular references
+[Nov 30 10:36:54] [DEBUG] (AbstractAutowireCapableBeanFactory.java:1453) - Invoking afterPropertiesSet() on bean with name 'hibernateProperties'
+[Nov 30 10:36:54] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'hibernateProperties'
+[Nov 30 10:36:54] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'sessionFactory'
+[Nov 30 10:36:54] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'sessionFactory'
+[Nov 30 10:36:54] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'sessionFactory' to allow for resolving potential circular references
+[Nov 30 10:36:54] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'dataSource'
+[Nov 30 10:36:54] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'hibernateProperties'
+[Nov 30 10:36:54] [DEBUG] (AbstractAutowireCapableBeanFactory.java:1453) - Invoking afterPropertiesSet() on bean with name 'sessionFactory'
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:284) - Hibernate Annotations 3.5.3-Final
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:263) - Hibernate 3.5.3-Final
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:263) - hibernate.properties not found
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:263) - Bytecode provider name : javassist
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:263) - using JDK 1.4 java.sql.Timestamp handling
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [uuid] -> [class org.hibernate.id.UUIDHexGenerator]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [hilo] -> [class org.hibernate.id.TableHiLoGenerator]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [assigned] -> [class org.hibernate.id.Assigned]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [identity] -> [class org.hibernate.id.IdentityGenerator]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [select] -> [class org.hibernate.id.SelectGenerator]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [sequence] -> [class org.hibernate.id.SequenceGenerator]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [seqhilo] -> [class org.hibernate.id.SequenceHiLoGenerator]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [increment] -> [class org.hibernate.id.IncrementGenerator]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [foreign] -> [class org.hibernate.id.ForeignGenerator]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [guid] -> [class org.hibernate.id.GUIDGenerator]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [uuid.hex] -> [class org.hibernate.id.UUIDHexGenerator]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [sequence-identity] -> [class org.hibernate.id.SequenceIdentityGenerator]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [enhanced-sequence] -> [class org.hibernate.id.enhanced.SequenceStyleGenerator]
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Registering IdentifierGenerator strategy [enhanced-table] -> [class org.hibernate.id.enhanced.TableGenerator]
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:284) - Hibernate Commons Annotations 3.2.0.Final
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:284) - Mapping package com.ajimports.domain
+[Nov 30 10:36:54] [WARN ] (JCLLoggerAdapter.java:379) - Package not found or wo package-info.java: com.ajimports.domain
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Execute first pass mapping processing
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Process hbm files
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Process annotated classes
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:284) - Binding entity from annotated class: com.ajimports.domain.Product
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - Import with entity name selling_product_details
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:307) - Bind entity com.ajimports.domain.Product on table selling_product_details
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(selling_product_details), mappingColumn=ITEM_NO, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property productId with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for productId
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property productId
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(selling_product_details), mappingColumn=DATE, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property date with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for date
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property date
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(selling_product_details), mappingColumn=DESCRIPTION, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property productName with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for productName
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property productName
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(selling_product_details), mappingColumn=PRICE, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property productPrice with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for productPrice
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property productPrice
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(selling_product_details), mappingColumn=QUANTITY, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property productQuantity with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for productQuantity
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property productQuantity
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:284) - Binding entity from annotated class: com.ajimports.domain.User
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - Import with entity name user_info
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:307) - Bind entity com.ajimports.domain.User on table user_info
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_info), mappingColumn=USERID, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property userId with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for userId
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property userId
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_info), mappingColumn=IMAGE, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property image with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for image
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property image
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_info), mappingColumn=PASSWORD, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property passWord with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for passWord
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property passWord
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_info), mappingColumn=USERNAME, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property userName with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for userName
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property userName
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:284) - Binding entity from annotated class: com.ajimports.domain.ExpenseDetails
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - Import with entity name expense_details
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:307) - Bind entity com.ajimports.domain.ExpenseDetails on table expense_details
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense_details), mappingColumn=EXPENSE_ID, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property expenseId with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for expenseId
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property expenseId
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense_details), mappingColumn=PRICE_CAUSED, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property causedPrice with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for causedPrice
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property causedPrice
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense_details), mappingColumn=EXPENDED_DATE, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property expendedDate with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for expendedDate
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property expendedDate
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense_details), mappingColumn=DESCRIPTION, insertable=true, updatable=true, unique=false}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:211) - binding property expendedFor with lazy=false
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - building SimpleValue for expendedFor
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Building property expendedFor
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for productId
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for date
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for productName
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for productPrice
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for productQuantity
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for userId
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for image
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for passWord
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for userName
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for expenseId
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for causedPrice
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for expendedDate
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:188) - setting SimpleValue typeName for expendedFor
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - processing fk mappings (*ToOne and JoinedSubclass)
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - processing extends queue
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - processing collection mappings
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - processing native query and ResultSetMapping mappings
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - processing association property references
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - processing foreign key constraints
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:263) - Hibernate Validator not found: ignoring
+[Nov 30 10:36:54] [INFO ] (LocalSessionFactoryBean.java:772) - Building new Hibernate SessionFactory
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Legacy Validator not present in classpath, ignoring event listener registration
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Search not present in classpath, ignoring event listener registration.
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:284) - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Preparing to build session factory with filters : {}
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Execute first pass mapping processing
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Process hbm files
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - Process annotated classes
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - processing fk mappings (*ToOne and JoinedSubclass)
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - processing extends queue
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - processing collection mappings
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - processing native query and ResultSetMapping mappings
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - processing association property references
+[Nov 30 10:36:54] [DEBUG] (JCLLoggerAdapter.java:168) - processing foreign key constraints
+[Nov 30 10:36:54] [INFO ] (JCLLoggerAdapter.java:263) - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - RDBMS: MySQL, version: 5.0.67-community-nt
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.5 ( Revision: ${svn.Revision} )
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Using dialect: org.hibernate.dialect.MySQLDialect
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Automatic flush during beforeCompletion(): disabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Automatic session close at end of transaction: disabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Scrollable result sets: enabled
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Wrap result sets: disabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - JDBC3 getGeneratedKeys(): enabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Connection release mode: after_transaction
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Maximum outer join fetch depth: 3
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Default batch fetch size: 1
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Generate SQL with comments: enabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Order SQL updates by primary key: disabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Order SQL inserts for batching: disabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Using ASTQueryTranslatorFactory
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Query language substitutions: {}
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - JPA-QL strict compliance: disabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Second-level cache: disabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Query cache: enabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Cache provider: org.hibernate.cache.EhCacheProvider
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Optimize cache for minimal puts: disabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Structured second-level cache entries: disabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Echoing all SQL to stdout
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Statistics: enabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Deleted entity synthetic identifier rollback: disabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Default entity-mode: pojo
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Named query checking : enabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - building session factory
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Session factory constructed with filter configurations : {}
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider, sun.boot.library.path=C:\Program Files\Java\jdk1.6.0_25\jre\bin, java.vm.version=20.0-b11, java.vm.vendor=Sun Microsystems Inc., java.vendor.url=http://java.sun.com/, path.separator=;, hibernate.cache.use_query_cache=true, java.vm.name=Java HotSpot(TM) Client VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=D:\Ushan\Software Programs\Desktop Applications\AJ Import Software, java.runtime.version=1.6.0_25-b06, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, hibernate.current_session_context_class=org.springframework.orm.hibernate3.SpringSessionContext, java.endorsed.dirs=C:\Program Files\Java\jdk1.6.0_25\jre\lib\endorsed, os.arch=x86, java.io.tmpdir=C:\Users\user\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Sun Microsystems Inc., user.variant=, os.name=Windows 7, hibernate.cache.use_second_level_cache=false, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.6.0_25\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.6.0_25/bin/../jre/bin/client;C:/Program Files/Java/jdk1.6.0_25/bin/../jre/bin;C:/Program Files/Java/jdk1.6.0_25/bin/../jre/lib/i386;47;C:\Program Files\Common Files\Reallusion\CamSuite;C:\Program Files\Common Files\Reallusion\CamSuite;C:\Program Files\Java\jdk1.6.0_25\bin;D:\Ushan\apache-tomcat-6.0.35\bin;C:\Program Files\Android\android-sdk;;G:\Programming Softwares\springsource\sts-2.6.1.SR1;, hibernate.generate_statistics=true, java.specification.name=Java Platform API Specification, java.class.version=50.0, sun.management.compiler=HotSpot Client Compiler, hibernate.transaction.factory_class=org.hibernate.transaction.JDBCTransactionFactory, os.version=6.1, user.home=C:\Users\user, user.timezone=Asia/Calcutta, java.awt.printerjob=sun.awt.windows.WPrinterJob, hibernate.connection.release_mode=after_transaction, java.specification.version=1.6, file.encoding=Cp1252, hibernate.format_sql=true, java.class.path=D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\bin;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\antlr-2.7.6.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\aopalliance.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\asm-all-3.3.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\backport-util-concurrent.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\cglib-2.2.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\comm.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-beanutils.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-collections-3.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-dbcp-1.4.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-digester-1.8.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-io-2.0.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-logging-1.1.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\commons-pool-1.5.6.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\dom4j-1.6.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\ehcache-1.5.0.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\groovy-1.0.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\h2-1.3.158.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\hibernate-jpa-2.0-api-1.0.0.Final.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\hibernate3.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\itext-2.0.5.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\jasperreports-2.0.5.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\javassist-3.9.0.GA.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\jgoodies-common-1.2.0.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\jgoodies-looks-2.4.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\jnotify-0.93.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\jta-1.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\JTattoo.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\log4j-1.2.16.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\mysql-connector-java-5.1.5-bin.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.aop-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.asm-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.aspects-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.beans-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.context-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.context.support-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.core-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.expression-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.instrument-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.instrument.tomcat-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.jdbc-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.jms-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.orm-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.oxm-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.test-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.transaction-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.web-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.web.portlet-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.web.servlet-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\org.springframework.web.struts-3.0.3.RELEASE.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\pduutils.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\rt.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\smslib-3.5.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\smsserver-3.5.1.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\WinRun4J.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\forms.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\slf4j-api-1.6.4.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\slf4j-jcl-1.6.4.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\mail.jar;D:\Ushan\Software Programs\Desktop Applications\AJ Import Software\lib\client_lib\jcalendar.jar, user.name=user, hibernate.bytecode.use_reflection_optimizer=false, hibernate.use_sql_comments=true, hibernate.show_sql=true, java.vm.specification.version=1.0, sun.arch.data.model=32, java.home=C:\Program Files\Java\jdk1.6.0_25\jre, sun.java.command=com.ajimports.main.AjimportMain, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.specification.vendor=Sun Microsystems Inc., user.language=en, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.6.0_25, hibernate.jdbc.use_streams_for_binary=true, java.ext.dirs=C:\Program Files\Java\jdk1.6.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.6.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\modules\jdk.boot.jar;C:\Program Files\Java\jdk1.6.0_25\jre\classes, java.vendor=Sun Microsystems Inc., hibernate.jdbc.batch_size=0, file.separator=\, java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi, hibernate.hbm2ddl.auto=update, hibernate.connection.provider_class=org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=windows, hibernate.max_fetch_depth=3, sun.cpu.isalist=pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86}
+[Nov 30 10:36:55] [DEBUG] (CacheManager.java:270) - Configuring ehcache from classpath.
+[Nov 30 10:36:55] [WARN ] (ConfigurationFactory.java:133) - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Ushan/Software%20Programs/Desktop%20Applications/AJ%20Import%20Software/lib/client_lib/ehcache-1.5.0.jar!/ehcache-failsafe.xml
+[Nov 30 10:36:55] [DEBUG] (ConfigurationFactory.java:93) - Configuring ehcache from URL: jar:file:/D:/Ushan/Software%20Programs/Desktop%20Applications/AJ%20Import%20Software/lib/client_lib/ehcache-1.5.0.jar!/ehcache-failsafe.xml
+[Nov 30 10:36:55] [DEBUG] (ConfigurationFactory.java:145) - Configuring ehcache from InputStream
+[Nov 30 10:36:55] [DEBUG] (BeanHandler.java:213) - Ignoring ehcache attribute xmlns:xsi
+[Nov 30 10:36:55] [DEBUG] (BeanHandler.java:213) - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+[Nov 30 10:36:55] [DEBUG] (DiskStoreConfiguration.java:98) - Disk Store Path: C:\Users\user\AppData\Local\Temp\
+[Nov 30 10:36:55] [DEBUG] (ConfigurationHelper.java:300) - No CacheManagerEventListenerFactory class specified. Skipping...
+[Nov 30 10:36:55] [DEBUG] (ConfigurationHelper.java:276) - No CachePeerListenerFactoryConfiguration specified. Not configuring a CacheManagerPeerListener.
+[Nov 30 10:36:55] [DEBUG] (ConfigurationHelper.java:253) - No CachePeerProviderFactoryConfiguration specified. Not configuring a CacheManagerPeerProvider.
+[Nov 30 10:36:55] [DEBUG] (ConfigurationHelper.java:180) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[Nov 30 10:36:55] [DEBUG] (ConfigurationHelper.java:205) - No CacheLoaderFactory class specified. Skipping...
+[Nov 30 10:36:55] [DEBUG] (ConfigurationHelper.java:230) - No CacheExceptionHandlerFactory class specified. Skipping...
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Setting dialect [org.hibernate.dialect.MySQLDialect]
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Setting dialect [org.hibernate.dialect.MySQLDialect]
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Setting dialect [org.hibernate.dialect.MySQLDialect]
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static SQL for entity: com.ajimports.domain.ExpenseDetails
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Version select: /* get version com.ajimports.domain.ExpenseDetails */ select EXPENSE_ID from expense_details where EXPENSE_ID =?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Snapshot select: /* get current state com.ajimports.domain.ExpenseDetails */ select expensedet_.EXPENSE_ID, expensedet_.PRICE_CAUSED as PRICE2_2_, expensedet_.EXPENDED_DATE as EXPENDED3_2_, expensedet_.DESCRIPTION as DESCRIPT4_2_ from expense_details expensedet_ where expensedet_.EXPENSE_ID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Insert 0: /* insert com.ajimports.domain.ExpenseDetails */ insert into expense_details (PRICE_CAUSED, EXPENDED_DATE, DESCRIPTION, EXPENSE_ID) values (?, ?, ?, ?)
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Update 0: /* update com.ajimports.domain.ExpenseDetails */ update expense_details set PRICE_CAUSED=?, EXPENDED_DATE=?, DESCRIPTION=? where EXPENSE_ID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Delete 0: /* delete com.ajimports.domain.ExpenseDetails */ delete from expense_details where EXPENSE_ID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Identity insert: /* insert com.ajimports.domain.ExpenseDetails */ insert into expense_details (PRICE_CAUSED, EXPENDED_DATE, DESCRIPTION) values (?, ?, ?)
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static SQL for entity: com.ajimports.domain.Product
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Version select: /* get version com.ajimports.domain.Product */ select ITEM_NO from selling_product_details where ITEM_NO =?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Snapshot select: /* get current state com.ajimports.domain.Product */ select product_.ITEM_NO, product_.DATE as DATE0_, product_.DESCRIPTION as DESCRIPT3_0_, product_.PRICE as PRICE0_, product_.QUANTITY as QUANTITY0_ from selling_product_details product_ where product_.ITEM_NO=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Insert 0: /* insert com.ajimports.domain.Product */ insert into selling_product_details (DATE, DESCRIPTION, PRICE, QUANTITY, ITEM_NO) values (?, ?, ?, ?, ?)
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Update 0: /* update com.ajimports.domain.Product */ update selling_product_details set DATE=?, DESCRIPTION=?, PRICE=?, QUANTITY=? where ITEM_NO=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Delete 0: /* delete com.ajimports.domain.Product */ delete from selling_product_details where ITEM_NO=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Identity insert: /* insert com.ajimports.domain.Product */ insert into selling_product_details (DATE, DESCRIPTION, PRICE, QUANTITY) values (?, ?, ?, ?)
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static SQL for entity: com.ajimports.domain.User
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Version select: /* get version com.ajimports.domain.User */ select USERID from user_info where USERID =?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Snapshot select: /* get current state com.ajimports.domain.User */ select user_.USERID, user_.IMAGE as IMAGE1_, user_.PASSWORD as PASSWORD1_, user_.USERNAME as USERNAME1_ from user_info user_ where user_.USERID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Insert 0: /* insert com.ajimports.domain.User */ insert into user_info (IMAGE, PASSWORD, USERNAME, USERID) values (?, ?, ?, ?)
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Update 0: /* update com.ajimports.domain.User */ update user_info set IMAGE=?, PASSWORD=?, USERNAME=? where USERID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Delete 0: /* delete com.ajimports.domain.User */ delete from user_info where USERID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) -  Identity insert: /* insert com.ajimports.domain.User */ insert into user_info (IMAGE, PASSWORD, USERNAME) values (?, ?, ?)
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [NONE]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [READ]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [UPGRADE]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [UPGRADE_NOWAIT]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [FORCE]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [PESSIMISTIC_READ]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=? lock in share mode
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [PESSIMISTIC_WRITE]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [PESSIMISTIC_FORCE_INCREMENT]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [OPTIMISTIC]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.ExpenseDetails [OPTIMISTIC_FORCE_INCREMENT]: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for action ACTION_MERGE on entity com.ajimports.domain.ExpenseDetails: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for action ACTION_REFRESH on entity com.ajimports.domain.ExpenseDetails: /* load com.ajimports.domain.ExpenseDetails */ select expensedet0_.EXPENSE_ID as EXPENSE1_2_0_, expensedet0_.PRICE_CAUSED as PRICE2_2_0_, expensedet0_.EXPENDED_DATE as EXPENDED3_2_0_, expensedet0_.DESCRIPTION as DESCRIPT4_2_0_ from expense_details expensedet0_ where expensedet0_.EXPENSE_ID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [NONE]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [READ]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [UPGRADE]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [UPGRADE_NOWAIT]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [FORCE]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [PESSIMISTIC_READ]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=? lock in share mode
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [PESSIMISTIC_WRITE]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [PESSIMISTIC_FORCE_INCREMENT]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [OPTIMISTIC]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.Product [OPTIMISTIC_FORCE_INCREMENT]: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for action ACTION_MERGE on entity com.ajimports.domain.Product: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for action ACTION_REFRESH on entity com.ajimports.domain.Product: /* load com.ajimports.domain.Product */ select product0_.ITEM_NO as ITEM1_0_0_, product0_.DATE as DATE0_0_, product0_.DESCRIPTION as DESCRIPT3_0_0_, product0_.PRICE as PRICE0_0_, product0_.QUANTITY as QUANTITY0_0_ from selling_product_details product0_ where product0_.ITEM_NO=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [NONE]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [READ]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [UPGRADE]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [UPGRADE_NOWAIT]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [FORCE]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [PESSIMISTIC_READ]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=? lock in share mode
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [PESSIMISTIC_WRITE]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [PESSIMISTIC_FORCE_INCREMENT]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=? for update
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [OPTIMISTIC]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for entity com.ajimports.domain.User [OPTIMISTIC_FORCE_INCREMENT]: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for action ACTION_MERGE on entity com.ajimports.domain.User: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Static select for action ACTION_REFRESH on entity com.ajimports.domain.User: /* load com.ajimports.domain.User */ select user0_.USERID as USERID1_0_, user0_.IMAGE as IMAGE1_0_, user0_.PASSWORD as PASSWORD1_0_, user0_.USERNAME as USERNAME1_0_ from user_info user0_ where user0_.USERID=?
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - initializing class SessionFactoryObjectFactory
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - registered: 402881823b4fb5d3013b4fb5d7390000 (unnamed)
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Not binding factory to JNDI, no JNDI name configured
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - instantiated session factory
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - Running hbm2ddl schema update
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - fetching database metadata
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - updating schema
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Execute first pass mapping processing
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Process hbm files
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Process annotated classes
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - processing fk mappings (*ToOne and JoinedSubclass)
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - processing extends queue
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - processing collection mappings
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - processing native query and ResultSetMapping mappings
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - processing association property references
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - processing foreign key constraints
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - table found: aj_import_database.expense_details
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - columns: [expense_id, description, price_caused, expended_date]
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - foreign keys: []
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - indexes: [primary]
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - table found: aj_import_database.selling_product_details
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - columns: [item_no, price, description, quantity, date]
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - foreign keys: []
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - indexes: [primary]
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - table found: aj_import_database.user_info
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - columns: [username, userid, image, password]
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - foreign keys: []
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - indexes: [primary]
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Setting dialect [org.hibernate.dialect.MySQLDialect]
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Setting dialect [org.hibernate.dialect.MySQLDialect]
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Setting dialect [org.hibernate.dialect.MySQLDialect]
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - schema update complete
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+[Nov 30 10:36:55] [WARN ] (JCLLoggerAdapter.java:359) - Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+[Nov 30 10:36:55] [DEBUG] (DiskStore.java:201) - Deleting data file org.hibernate.cache.UpdateTimestampsCache.data
+[Nov 30 10:36:55] [DEBUG] (MemoryStore.java:73) - Initialized net.sf.ehcache.store.LruMemoryStore for org.hibernate.cache.UpdateTimestampsCache
+[Nov 30 10:36:55] [DEBUG] (LruMemoryStore.java:71) - org.hibernate.cache.UpdateTimestampsCache Cache: Using SpoolingLinkedHashMap implementation
+[Nov 30 10:36:55] [DEBUG] (Cache.java:557) - Initialised cache: org.hibernate.cache.UpdateTimestampsCache
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - started EHCache region: org.hibernate.cache.UpdateTimestampsCache
+[Nov 30 10:36:55] [INFO ] (JCLLoggerAdapter.java:263) - starting query cache at region: org.hibernate.cache.StandardQueryCache
+[Nov 30 10:36:55] [WARN ] (JCLLoggerAdapter.java:359) - Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+[Nov 30 10:36:55] [DEBUG] (DiskStore.java:201) - Deleting data file org.hibernate.cache.StandardQueryCache.data
+[Nov 30 10:36:55] [DEBUG] (MemoryStore.java:73) - Initialized net.sf.ehcache.store.LruMemoryStore for org.hibernate.cache.StandardQueryCache
+[Nov 30 10:36:55] [DEBUG] (LruMemoryStore.java:71) - org.hibernate.cache.StandardQueryCache Cache: Using SpoolingLinkedHashMap implementation
+[Nov 30 10:36:55] [DEBUG] (Cache.java:557) - Initialised cache: org.hibernate.cache.StandardQueryCache
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - started EHCache region: org.hibernate.cache.StandardQueryCache
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Checking 0 named HQL queries
+[Nov 30 10:36:55] [DEBUG] (JCLLoggerAdapter.java:168) - Checking 0 named SQL queries
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'sessionFactory'
+[Nov 30 10:36:55] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'productDAO'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'productDAO'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'productDAO' to allow for resolving potential circular references
+[Nov 30 10:36:55] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'sessionFactory'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:1453) - Invoking afterPropertiesSet() on bean with name 'productDAO'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'productDAO'
+[Nov 30 10:36:55] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'userDAO'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'userDAO'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'userDAO' to allow for resolving potential circular references
+[Nov 30 10:36:55] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'sessionFactory'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:1453) - Invoking afterPropertiesSet() on bean with name 'userDAO'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'userDAO'
+[Nov 30 10:36:55] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'expenseDetailsDAO'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'expenseDetailsDAO'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'expenseDetailsDAO' to allow for resolving potential circular references
+[Nov 30 10:36:55] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'sessionFactory'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:1453) - Invoking afterPropertiesSet() on bean with name 'expenseDetailsDAO'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'expenseDetailsDAO'
+[Nov 30 10:36:55] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'productAction'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'productAction'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'productAction' to allow for resolving potential circular references
+[Nov 30 10:36:55] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'productDAO'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'productAction'
+[Nov 30 10:36:55] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'userAction'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'userAction'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'userAction' to allow for resolving potential circular references
+[Nov 30 10:36:55] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'userDAO'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'userAction'
+[Nov 30 10:36:55] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'expenseDetailsAction'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'expenseDetailsAction'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'expenseDetailsAction' to allow for resolving potential circular references
+[Nov 30 10:36:55] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'expenseDetailsDAO'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'expenseDetailsAction'
+[Nov 30 10:36:55] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'productView'
+[Nov 30 10:36:55] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'productView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'productView' to allow for resolving potential circular references
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'productAction'
+[Nov 30 10:36:56] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'sendMailBean'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'sendMailBean'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'sendMailBean' to allow for resolving potential circular references
+[Nov 30 10:36:56] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'mailSender'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'mailSender'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'mailSender' to allow for resolving potential circular references
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'mailSender'
+[Nov 30 10:36:56] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'customeMailMessage'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'customeMailMessage'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'customeMailMessage' to allow for resolving potential circular references
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'customeMailMessage'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'sendMailBean'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'productView'
+[Nov 30 10:36:56] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'homeWindowView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'homeWindowView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'homeWindowView' to allow for resolving potential circular references
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'productView'
+[Nov 30 10:36:56] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'userRegisterView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'userRegisterView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'userRegisterView' to allow for resolving potential circular references
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'userAction'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'userRegisterView'
+[Nov 30 10:36:56] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'expenseDetails'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'expenseDetails'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'expenseDetails' to allow for resolving potential circular references
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'expenseDetailsAction'
+[Nov 30 10:36:56] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'reportDetailsView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'reportDetailsView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'reportDetailsView' to allow for resolving potential circular references
+[Nov 30 10:36:56] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'reportView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'reportView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'reportView' to allow for resolving potential circular references
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'expenseDetailsAction'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'reportView'
+[Nov 30 10:36:56] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'expendedByReportView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'expendedByReportView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'expendedByReportView' to allow for resolving potential circular references
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'expenseDetailsAction'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'expendedByReportView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'reportDetailsView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'expenseDetails'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'homeWindowView'
+[Nov 30 10:36:56] [DEBUG] (DefaultSingletonBeanRegistry.java:214) - Creating shared instance of singleton bean 'loginFormView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:430) - Creating instance of bean 'loginFormView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:504) - Eagerly caching bean 'loginFormView' to allow for resolving potential circular references
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'userAction'
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'homeWindowView'
+[Nov 30 10:36:56] [DEBUG] (AbstractAutowireCapableBeanFactory.java:458) - Finished creating instance of bean 'loginFormView'
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'userRegisterView'
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'expenseDetails'
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'reportDetailsView'
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'reportView'
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'expendedByReportView'
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'mailSender'
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'sendMailBean'
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'customeMailMessage'
+[Nov 30 10:36:56] [DEBUG] (AbstractApplicationContext.java:827) - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@1292738]
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'lifecycleProcessor'
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'dataSource'
+[Nov 30 10:36:56] [DEBUG] (AbstractBeanFactory.java:242) - Returning cached instance of singleton bean 'loginFormView'
